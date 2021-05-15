@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">TheMovieDB</string>
+    <string name="title_home">Películas Populares</string>
+    <string name="title_dashboard">Actores</string>
+    <string name="title_notifications">Notifications</string>
     <string name="title_movies">Películas</string>
+    <string name="title_people">Actores</string>
 </resources>

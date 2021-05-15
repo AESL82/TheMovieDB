@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -9,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.ve.tecno.themoviedb"
-        minSdkVersion 16
+        minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -56,7 +57,7 @@ dependencies {
     // Coil (Coroutine Image Loader)
     implementation("io.coil-kt:coil:1.2.1")
     // Lottie
-    implementation 'com.airbnb.android:lottie:3.4.0'
+    implementation 'com.airbnb.android:lottie:3.7.0'
     // Retrofit, OkHttp, Gson-converter
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
     implementation "com.squareup.okhttp3:okhttp:$okHttpVersion"

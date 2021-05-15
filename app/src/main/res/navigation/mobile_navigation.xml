@@ -3,23 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_movies">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.ve.tecno.themoviedb.ui.home.HomeFragment"
+        android:id="@+id/navigation_movies"
+        android:name="com.ve.tecno.themoviedb.ui.movies.MovieListFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_movie_list" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_people"
         android:name="com.ve.tecno.themoviedb.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.ve.tecno.themoviedb.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
 </navigation>
