@@ -5,15 +5,17 @@
     android:name="com.ve.tecno.themoviedb.ui.movies.MovieListFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.movies.MovieListFragment">
+    tools:context=".ui.people.PeopleListFragment">
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list"
-        app:layoutManager="LinearLayoutManager"
-        android:layoutAnimation="@anim/layout_animation"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/fragment_movie_list_item" />
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/fragment_movie_list_item"
+        android:layoutAnimation="@anim/layout_animation"
+        />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/paginationProgressBar"
@@ -27,5 +29,6 @@
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/loading_animation" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

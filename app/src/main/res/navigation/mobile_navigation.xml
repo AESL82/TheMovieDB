@@ -13,8 +13,8 @@
 
     <fragment
         android:id="@+id/navigation_people"
-        android:name="com.ve.tecno.themoviedb.ui.dashboard.DashboardFragment"
+        android:name="com.ve.tecno.themoviedb.ui.people.PeopleListFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_people_list" />
 
 </navigation>
