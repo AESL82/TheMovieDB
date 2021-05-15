@@ -44,7 +44,6 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     def retrofitVersion = '2.9.0'
     def okHttpVersion = '4.7.2'
-    def daggerVersion = '2.27'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.2.0'
