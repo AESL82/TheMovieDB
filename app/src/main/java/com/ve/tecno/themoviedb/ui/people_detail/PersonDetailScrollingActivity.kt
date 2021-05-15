@@ -27,12 +27,12 @@ class PersonDetailScrollingActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction()
             .add(R.id.contenedor, peopleDetailFragment)
             .commit()
-
+        /*
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
-
+        */
         val extras: Bundle? = intent.extras
         val id = extras?.getInt(Constants.EXTRA_PERSON_ID)
         val photo = extras?.getString(Constants.EXTRA_PERSON_PHOTO)

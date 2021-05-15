@@ -33,7 +33,7 @@ class PeopleListFragment : Fragment() {
 
         (activity?.applicationContext as MyApp).appComponent.inject(this)
 
-        sharedViewModel = ViewModelProvider(activity!!).get(SharedViewModel::class.java)
+        sharedViewModel = ViewModelProvider(requireActivity()).get(SharedViewModel::class.java)
     }
 
     override fun onCreateView(
@@ -42,14 +42,10 @@ class PeopleListFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_people_list, container, false)
 
-
-        // Set information
         paginationProgressBar = view.findViewById(R.id.paginationProgressBar)
 
-        // Observer for peopleAdapter
         peopleAdapter = PeopleRecyclerViewAdapter(sharedViewModel)
 
-        // Set the adapter
         val recyclerView = view.findViewById<RecyclerView>(R.id.list)
 
         with(recyclerView) {
@@ -60,7 +56,6 @@ class PeopleListFragment : Fragment() {
             adapter = peopleAdapter
         }
 
-        // Observer for popularMovies
         peopleViewModel.popularPeople.observe(viewLifecycleOwner, Observer { response ->
 
             when(response) {

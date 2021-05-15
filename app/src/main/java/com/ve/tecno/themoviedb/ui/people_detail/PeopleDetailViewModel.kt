@@ -12,7 +12,9 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import retrofit2.Response
 import javax.inject.Inject
+import javax.inject.Singleton
 
+@Singleton
 class PeopleDetailViewModel @Inject constructor(private val theMovieDBRepository: TheMovieDBRepository): ViewModel() {
 
     var personInfoDetail: MutableLiveData<Resource<PersonDetail>> = MutableLiveData()

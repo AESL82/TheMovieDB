@@ -37,7 +37,6 @@ class PeopleDetailFragment @Inject constructor(val peopleDetailViewModel: People
 
         showProgressBar()
 
-        // Observer for personMovies
         peopleDetailViewModel.personInfoDetail.observe(viewLifecycleOwner, Observer { response ->
             Log.i("MOVIES", "sharedViewModel en PeopleDetailFragment: $peopleDetailViewModel")
 

@@ -5,7 +5,10 @@ import com.ve.tecno.themoviedb.ui.movies.MovieListFragment
 import com.ve.tecno.themoviedb.ui.people.PeopleListFragment
 import com.ve.tecno.themoviedb.ui.people_detail.PersonDetailScrollingActivity
 import dagger.Component
+import javax.inject.Singleton
 
+
+@Singleton
 @Component(modules = [NetworkModule::class])
 
 interface ApplicationComponent {

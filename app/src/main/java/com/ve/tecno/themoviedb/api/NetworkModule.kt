@@ -8,18 +8,22 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 import javax.inject.Named
+import javax.inject.Singleton
 
 @Module
 class NetworkModule {
 
+    @Singleton
     @Provides
     @Named("apiUrl")
     fun provideBaseUrl(): String = Constants.TMDBAPI_BASE_URL
 
+    @Singleton
     @Provides
     @Named("imageUrl")
     fun provideImageBaseUrl(): String = Constants.IMAGE_BASE_URL
 
+    @Singleton
     @Provides
     fun provideOkHttpClient(theMovieDBInterceptor: TheMovieDBInterceptor): OkHttpClient {
         return with(OkHttpClient.Builder()) {
@@ -29,6 +33,7 @@ class NetworkModule {
         }
     }
 
+    @Singleton
     @Provides
     fun provideTheMovieDBService(@Named("apiUrl") url: String, okHttpClient: OkHttpClient): TheMovieDBService {
         return Retrofit.Builder()

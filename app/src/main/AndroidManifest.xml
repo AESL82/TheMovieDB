@@ -11,6 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TheMovieDB">
         <activity
+            android:name=".ui.people_detail.PersonDetailScrollingActivity"
+            android:label="@string/title_activity_person_detail_scrolling"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
             <intent-filter>
